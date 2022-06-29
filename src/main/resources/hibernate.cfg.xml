@@ -16,7 +16,7 @@
         <property name="show_sql">true</property>
         <property name="format_sql">true</property>
         <property name="use_sql_comments">true</property>
-        <mapping class="ru.job4j.hql.CarModel" />
-        <mapping class="ru.job4j.hql.CarType" />
+        <mapping class="ru.job4j.manytomany.Book" />
+        <mapping class="ru.job4j.manytomany.Author" />
     </session-factory>
 </hibernate-configuration>
