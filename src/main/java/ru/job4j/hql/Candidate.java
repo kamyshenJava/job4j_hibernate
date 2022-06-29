@@ -1,6 +1,7 @@
 package ru.job4j.hql;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 import java.util.Objects;
 
 @Entity
@@ -12,12 +13,14 @@ public class Candidate {
     private String name;
     private String experience;
     private Double salary;
+    private LocalDateTime created;
 
     public static Candidate of(String name, String experience, Double salary) {
         Candidate candidate = new Candidate();
         candidate.name = name;
         candidate.experience = experience;
         candidate.salary = salary;
+        candidate.created = LocalDateTime.now();
         return candidate;
     }
 
