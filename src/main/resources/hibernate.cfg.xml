@@ -16,7 +16,7 @@
         <property name="show_sql">true</property>
         <property name="format_sql">true</property>
         <property name="use_sql_comments">true</property>
-        <mapping class="ru.job4j.manytomany.Book" />
-        <mapping class="ru.job4j.manytomany.Author" />
+        <mapping class="ru.job4j.lazy.Type" />
+        <mapping class="ru.job4j.lazy.Model" />
     </session-factory>
 </hibernate-configuration>
